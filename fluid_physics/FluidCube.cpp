@@ -178,11 +178,6 @@ public:
 			for (int m = 1; m < N - 1; m++) {
 				for (int j = 1; j < N - 1; j++) {
 					for (int i = 1; i < N - 1; i++) {
-						d[IX(i+1, j+1, m+1)] = 0;
-						d0[IX(i+1, j+1, m+1)] = 0;
-
-						std::cout << IX(i, j, m) << " -- " << N*N*N << "--" << d + IX(i, j, m) << "--" << d0 + IX(i, j, m) << std::endl;
-						std::cout << IX(i, j, m) << " -- " << N*N*N << "--" << d << "--" << d0 << std::endl;
 						d[IX(i, j, m)] =
 									(d0[IX(i  ,j  ,m  )] +
 								 (a*( d[IX(i+1,j  ,m  )]
